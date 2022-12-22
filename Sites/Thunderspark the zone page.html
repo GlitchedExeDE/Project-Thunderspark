@@ -68,20 +68,18 @@
 			float:right;
 		}
 		.boxleft :hover{
+			margin-top:0;
 			background-image: url(/Resources/HT_Thumbnail.png);
+			background-repeat: round;
 			transition: height 3s;
 			height: 500px;
 		}
-		.boxright :hover{
-			transition: height 3s;
-			height: 500px;
-			
+		#boxtext {
+			display: none;
 		}
-		#maintext {
-			padding: 10px;
-			text-align: center;
-			font-size: 30px;
-			color:white;
+		.boxright :hover + #boxtext{
+			display: inline-block;
+			height: 500px;
 		}
 		@media screen and (max-width: 800px) {
 			.UIs a{   
@@ -104,6 +102,10 @@
 			</div>
 		<div class="boxleft">
 			<h2>Heretics throne</h2>
+			<div id="boxtext">
+			Earth had been invaded by foreign entities. Divine beings of uncontained power and otherworldly organisations fowarding their goals and ambitions no matter the cost.
+			A new global order established through the sacrafice of untold billions and the inevetable downfall of empires and prohecies.
+			</div>
 		</div>
 		<div class="boxright">
 			<h2>Far sky</h2>
