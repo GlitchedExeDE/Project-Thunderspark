@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Project Thunderspark</title>
+		<style type="text/css">
+			body {
+				background-color:black;
+				position: absolute;
+			}
+			html {
+				scroll-behavior: smooth;
+			}
+			.header{
+				font-family:"Courier New", monospace;
+				color:black;
+				background-color:grey;
+			}
+			.header h1{
+				text-align:center;
+				font-size:75px;
+			}
+			.column {  			
+				float: left;
+				padding: 20px;
+				width: 75%;
+			}
+			.rightcolumn {
+				padding: 20px;
+				float: right;
+				width: 20%;
+			}
+			.UIs {				
+				font-size: 17px;
+				background-color:grey;
+				top: 0;
+				position: sticky;
+				overflow: hidden;
+				border: 5px solid white;
+			}
+			.UIs a {
+				float: left;
+				display: block;
+				color: #f2f2f2;
+				text-align: center;
+				padding: 20px 35px;
+				text-decoration: none;
+				width:75px;
+				height:25px;				
+			}
+			.UIs a:hover {
+				background-color: #ddd;
+				color: red;
+				transition: width 0.5s;
+				width: 110px;
+			}
+			.active {
+				background-color: green;
+			}
+			#para1{
+				padding: 15px;
+				font-size: 20px;
+				color:black;	
+				text-align:justify;
+			}
+			.pager {
+				background-color: grey;
+				padding: 5px;
+				margin-top: 25px;
+			}
+			h1,h2,h3,h4,h5,h6 {
+				padding: 15px;
+				font-size:50px;
+				color:white;
+				margin-top: 10px	
+			}
+			.footer {
+				background-color: grey;
+				padding: 10px;
+				text-align: left;
+				color: black;
+				margin-top: 200px;
+				height: 170px;
+			}
+			.fakeimg {
+				background-color: #aaa;
+				width: 50%;
+				padding: 20px;
+			}
+			@media screen and (max-width: 800px) {
+			  .column, .rightcolumn{   
+				width: 100%;
+				padding: 0;
+			  }
+			}
+			@media screen and (max-width: 800px) {
+			  .header h1{
+				font-size: 50px;
+				padding: 0;
+			  }
+			}
+			@media screen and (max-width: 800px) {
+			  .UIs a{   
+				float: center;
+				width: 30%;
+			  }
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<h1>Project Thunderspark</h1>
+		</div>
+		<div class="UIs">
+			<a class="active" href="./Thunderspark site DEV_build.html">Home</a>
+			<a href="./Thunderspark news page DEV_build.html">News</a>
+			<a href="#contact">Contact</a>
+			<a href="./Thunderspark the zone main DEV_build.html" style="font-stretch:5px">The Zone</a>
+			<a href="./Thunderspark changelog page DEV_build.html">Changelog</a>
+			<a href="./Thunderspark about page DEV_build.html" style="float:right">About</a>
+		</div>
+	<div class="column">
+		<div class ="pager">
+			<h2>What is Project Thunderspark?</h2>
+			<div class="fakeimg" style="height:200px;margin-left: 15px;">Image</div>
+			<p id="para1">
+			Project Thunderspark is a web-based application that aims to bring GlitchedExe's fictional universe, "The Zone" to life by 
+			complying all the information that had been worked on over the years into a single compendium.
+			If you're interested in a sci-fi, dark, war-focused ever-growing universe which spans multiple timelines and centuries, that took inspiration from fiction such as Warhammer, STALKER, SCP. Then you're looking right at it.
+			</p>
+		</div>
+		<div class="pager">
+			<h4 style="margin-bottom: 10px">NOTICE</h4>
+				<p id="para1">
+				Project Thunderspark is the first official attempt to create a web-based locally-stored application for storing information about GlitchedExe's "The Zone."
+				</p>
+				<p id="para1">
+				This is by no means the finished product, and updates will be released through a series of update folders that the user would have to search, 
+				download and apply manually. Any feedback and discussion are highly encouraged by the creator. Thank you for your support and patience :) 
+				</p>
+				<p id="para1" style="color:red;">
+				Current version - alpha_1;
+				</p>
+		</div>
+		<div class ="footer">
+			<p id="contact">
+			<h5 style="margin-bottom:10px">Contact Information</h5>
+				<p>
+				<a href="https://discord.gg/Z5VvvUZGk2" style="font-size: 20px;padding: 20px;">Official discord server invite</a>
+				</p>
+			</p>
+		</div>
+	</div>
+	<div class="rightcolumn">
+		<div class="pager">
+			<h6 style="text-align:center;">Recent news</h6>
+		</div>
+	</div>
+	</body>
+</html>
