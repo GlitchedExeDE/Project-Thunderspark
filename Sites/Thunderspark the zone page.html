@@ -7,6 +7,14 @@
 			background-color:black;
 		}
 		h1{
+			font-size:75px;
+			padding:15px;
+			color:white;
+		}
+		h2{
+			text-align: center;
+			font-size:70px;
+			padding:10px;
 			color:white;
 		}
 		.header{
@@ -45,6 +53,37 @@
 		.active {
 			background-color: green;
 		}
+		.boxleft, .boxright {
+			width: 600px;
+			height: 300px;
+			margin: 20px;
+		}
+		.boxleft {
+			background-image: url();
+			margin-left: 100px;
+			float:left;
+		}
+		.boxright{
+			margin-right: 100px;
+			float:right;
+		}
+		.boxleft :hover{
+			background-color: grey;
+			transition: height 3s;
+			height: 500px;
+		}
+		.boxright :hover{
+			background-color: grey;
+			transition: height 3s;
+			height: 500px;
+			
+		}
+		#maintext {
+			padding: 10px;
+			text-align: center;
+			font-size: 30px;
+			color:white;
+		}
 		@media screen and (max-width: 800px) {
 			.UIs a{   
 				float: center;
@@ -63,7 +102,12 @@
 				<a href="./Thunderspark site DEV_build.html#contact">Contact</a>
 				<a class="active" href="./Thunderspark the zone main DEV_build.html" style="font-stretch:5px">The Zone</a>
 				<a href="./Thunderspark changelog page DEV_build.html">Changelog</a>
-				<a href="./Thunderspark about page DEV_build.html" style="float:right">About</a>
 			</div>
+		<div class="boxleft">
+			<h2>Heretics throne</h2>
+		</div>
+		<div class="boxright">
+			<h2>Far sky</h2>
+		</div>
 		</body>
 </html>
