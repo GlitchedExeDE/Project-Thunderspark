@@ -1,0 +1,72 @@
+body{
+    background-color:black;
+}
+.header{
+    font-family:"Courier New", monospace;
+    color:white;
+    background-color:grey;
+}
+.header h1{
+    text-align:center;
+    font-size:75px;
+}
+.UIs {				
+    font-size: 17px;
+    background-color:grey;
+    top: 0;
+    position: sticky;
+    overflow: hidden;
+    border: 5px solid white;
+}
+.UIs a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 35px;
+    text-decoration: none;
+    width:75px;
+    height:25px;				
+}
+.UIs a:hover {
+    background-color: #ddd;
+    color: red;
+    transition: width 0.5s;
+    width: 110px;
+}
+.active {
+    background-color: green;
+}
+.SUIs {
+    list-style-type: none;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 0;
+    width: 12%;
+    background-color: grey;
+    position: fixed;
+    height: 50%;
+    overflow: auto;
+}
+li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 17px;
+}
+li a.active {
+    background-color: green;
+    color: white;
+}
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+@media screen and (max-width: 800px) {
+    .UIs a{   
+        float: center;
+        width: 30%;
+    }
+}
