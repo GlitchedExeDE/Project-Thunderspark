@@ -64,6 +64,7 @@
 			float:left;
 		}
 		.boxright{
+			background-image: url(/Resources/FS_Thumbnail\ -\ new.png);
 			margin-right: 100px;
 			float:right;
 		}
@@ -74,11 +75,11 @@
 			transition: height 3s;
 			height: 500px;
 		}
-		#boxtext {
-			display: none;
-		}
-		.boxright :hover + #boxtext{
-			display: inline-block;
+		.boxright :hover{
+			margin-top:0;
+			background-image: url(/Resources/FS_Thumbnail\ -\ new.png);
+			background-repeat: round;
+			transition: height 3s;
 			height: 500px;
 		}
 		@media screen and (max-width: 800px) {
@@ -89,10 +90,10 @@
 		}
 	</style>
 	</head>
-		<body>
-			<div class="header">
-				<h1 style="font-size:75px;padding:15px">THE ZONE</h1>
-			</div>
+	<body>
+		<div class="header">
+			<h1 style="font-size:75px;padding:15px">THE ZONE</h1>
+		</div>
 			<div class="UIs">
 				<a href="./Thunderspark site DEV_build.html">Home</a>
 				<a href="./Thunderspark news page DEV_build.html">News</a>
@@ -101,14 +102,10 @@
 				<a href="./Thunderspark changelog page DEV_build.html">Changelog</a>
 			</div>
 		<div class="boxleft">
-			<h2>Heretics throne</h2>
-			<div id="boxtext">
-			Earth had been invaded by foreign entities. Divine beings of uncontained power and otherworldly organisations fowarding their goals and ambitions no matter the cost.
-			A new global order established through the sacrafice of untold billions and the inevetable downfall of empires and prohecies.
-			</div>
+			<h2><a href="./The Zone_HT/HT_Main" style="color:white;background: local;text-decoration: none;">Heretics Throne</a></h2>
 		</div>
 		<div class="boxright">
-			<h2>Far sky</h2>
+			<h2><a href="./The Zone_FS/FS_Main" style="color:white;background: local;text-decoration: none;">Far Sky</a></h2>
 		</div>
-		</body>
+	</body>
 </html>
