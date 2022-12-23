@@ -48,7 +48,36 @@ h2{
 .active {
     background-color: green;
 }
-
+.box1 {
+    float: left;
+    margin: 50px;
+    background-image: url("../Pictures/HT_Thumbnail.png");
+    background-size: cover;
+    height: 450px;
+    width: 600px;
+}
+.box2 {
+    float: right;
+    margin: 50px;
+    background-image: url("../Pictures/FS_Thumbnail.png");
+    background-size: cover;
+    height: 450px;
+    width: 600px;
+}
+.box a {
+    margin-left: 70px;
+    text-decoration: none;
+    padding: 10px;
+    color:white;
+    font-size: 70px;
+}
+.text {
+    color: white;
+    font-size: 200px;
+}
+.text a:hover {
+    display: block;
+}
 @media screen and (max-width: 800px) {
     .UIs a{   
         float: center;
