@@ -48,35 +48,7 @@ h2{
 .active {
     background-color: green;
 }
-.boxleft, .boxright {
-    width: 600px;
-    height: 300px;
-    margin: 20px;
-}
-.boxleft {
-    background-image: url(../Pictures/HT_Thumbnail.png);
-    margin-left: 100px;
-    float:left;
-}
-.boxright{
-    background-image: url(../Pictures/FS_Thumbnail.png);
-    margin-right: 100px;
-    float:right;
-}
-.boxleft :hover{
-    margin-top:0;
-    background-image: url(../Pictures/HT_Thumbnail.png);
-    background-repeat: round;
-    transition: height 3s;
-    height: 500px;
-}
-.boxright :hover{
-    margin-top:0;
-    background-image: url(../Pictures/FS_Thumbnail.png);
-    background-repeat: round;
-    transition: height 3s;
-    height: 500px;
-}
+
 @media screen and (max-width: 800px) {
     .UIs a{   
         float: center;
