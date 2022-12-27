@@ -64,6 +64,22 @@ li a:hover:not(.active) {
     background-color: #555;
     color: white;
 }
+h2 {
+    color: white;
+    font-size: 100px;
+    text-align: center;
+}
+.text {
+    float: right;
+    background-color: grey;
+    color: white;
+    margin: 50px;
+    width: 80%;
+}
+.text p {
+    margin: 50px;
+    font-size: 20px;
+}
 @media screen and (max-width: 800px) {
     .UIs a{   
         float: center;
