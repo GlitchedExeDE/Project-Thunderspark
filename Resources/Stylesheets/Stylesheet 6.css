@@ -1,0 +1,182 @@
+body{
+    background-color:black;
+}
+.header{
+    font-family:"Courier New", monospace;
+    color:white;
+    background-color:grey;
+}
+.header h1{
+    text-align:center;
+    font-size:75px;
+}
+.UIs {		
+    z-index: 2;		
+    font-size: 17px;
+    background-color:grey;
+    top: 0;
+    position: sticky;
+    overflow: hidden;
+    border: 5px solid white;
+}
+.UIs a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 35px;
+    text-decoration: none;
+    width:75px;
+    height:25px;				
+}
+.UIs a:hover {
+    background-color: #ddd;
+    color: red;
+    transition: width 0.5s;
+    width: 110px;
+}
+.active {
+    background-color: green;
+}
+.SUIs {
+    list-style-type: none;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 0;
+    width: 12%;
+    background-color: grey;
+    position: fixed;
+    height: 50%;
+    overflow: auto;
+}
+li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 17px;
+}
+li a.active {
+    background-color: green;
+    color: white;
+}
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+h2 {
+    color: white;
+    font-size: 100px;
+    text-align: center;
+}
+.text {
+    float: right;
+    background-color: grey;
+    color: white;
+    margin: 50px;
+    width: 80%;
+}
+.text p {
+    margin: 50px;
+    font-size: 20px;
+}
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+.container {
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.left {
+    left: 0%;
+}
+.right {
+    left: 50%;
+}
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+.right::after {
+    left: -16px;
+}
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+@media screen and (max-width: 600px) {
+    .timeline::after {
+    left: 31px;
+}
+.container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+}
+.container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+.left::after, .right::after {
+    left: 15px;
+}
+.right {
+    left: 0%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .UIs a{   
+        float: center;
+        width: 30%;
+    }
+}
