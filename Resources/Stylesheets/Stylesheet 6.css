@@ -102,6 +102,10 @@ h2 {
     background-color: inherit;
     width: 50%;
 }
+.container a {
+    text-decoration: none;
+    color: blue;
+}
 .container::after {
     content: '';
     position: absolute;
